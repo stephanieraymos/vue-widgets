@@ -1,3 +1,6 @@
-const app = Vue.createApp() 
+const app = Vue.createApp({
+    // data, functions 
+    template: "<h2>Template</h2>",
+}) 
 
 app.mount("#app") 
