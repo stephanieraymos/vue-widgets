@@ -1,1 +1,3 @@
-console.log("Testing script")
+const app = Vue.createApp() 
+
+app.mount("#app") 
