@@ -1,6 +1,9 @@
 const app = Vue.createApp({
-    // data, functions 
-    template: "<h2>Template</h2>",
+    data() {
+        return {
+            title: "Book title"
+        }
+    }
 }) 
 
 app.mount("#app") 
