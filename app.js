@@ -8,7 +8,7 @@ const app = Vue.createApp({
   },
   methods: {
     changeTitle() {
-      console.log("clicked")
+      this.title = "New title";
     },
   },
 });
