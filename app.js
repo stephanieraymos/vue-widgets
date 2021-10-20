@@ -11,6 +11,9 @@ const app = Vue.createApp({
     changeTitle(title) {
       this.title = title;
     },
+    toggleShowBooks() {
+      this.showBooks = false
+    }
   },
 });
 
