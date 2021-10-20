@@ -1,6 +1,7 @@
 const app = Vue.createApp({
   data() {
     return {
+      showBooks: true,
       title: "Book title",
       author: "Author",
       age: 30,
