@@ -9,13 +9,18 @@
   </head>
   <body>
     <h1>!false - it's funny because it's true</h1>
+
     <div id="app">
-      <p>{{title}} by {{author}} - {{age}} years old</p>
+      <div v-if="false">
+        <p>{{title}} by {{author}} - {{age}} years old</p>
+      </div>
+
       <!-- @click is a shortcut for v-on:click -->
       <button @click="age++">Increase age</button>
       <button v-on:click="age--">Decrease age</button>
       <div @click="changeTitle('Awesome Title')">Change title</div>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>
