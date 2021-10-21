@@ -15,7 +15,7 @@ const app = Vue.createApp({
       this.showBooks = !this.showBooks
     },
     handleEvent(e) {
-      console.log(e)
+      console.log(e, e.type)
     }
   },
 });
