@@ -6,28 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue Widgets</title>
     <script src="https://unpkg.com/vue@3.0.2"></script>
+    <style>
+      .box {
+        padding: 100px 0;
+        width: 400px;
+        text-align: center;
+        background: #ddd;
+        margin: 20px;
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
     <h1>!false - it's funny because it's true</h1>
 
     <div id="app">
-      // v-if takes it out of dom completely if false, and inserts it if true
-      // v-show uses css (display:block when true display:none when false)
-      // v-show is better for performance since adding and removing from dom is expensive
       <div v-if="showBooks">
         <p>{{title}} by {{author}} - {{age}} years old</p>
       </div>
+
       <button @click="toggleShowBooks">
         <span v-if="showBooks"> Hide Books </span>
         <span v-else> Show Books </span>
       </button>
 
-      <div v-show="showBooks">Currently showing books</div>
-
-      <!-- @click is a shortcut for v-on:click -->
-      <!-- <button @click="age++">Increase age</button>
-      <button v-on:click="age--">Decrease age</button> -->
-      <div @click="changeTitle('Awesome Title')">Change title</div>
+      <br />
+      <!-- Mouse Events -->
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
     </div>
 
     <script src="app.js"></script>
