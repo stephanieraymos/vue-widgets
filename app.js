@@ -1,6 +1,7 @@
 const app = Vue.createApp({
   data() {
     return {
+      url: 'http://linkedin.com/in/stephanieraymos',
       showBooks: true,
       books: [
         {
